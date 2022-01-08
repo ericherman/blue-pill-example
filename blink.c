@@ -64,7 +64,7 @@ void set_led(int on)
 
 /*
  * toggle off and back on approx every million loops (2^20 == 1048576)
- * (power of two so that division will be a right shit)
+ * (power of two so that division will be a right shift)
  * but if the loop takes a long time, this will be a very slow blink
  */
 #ifndef LOOPS_PER_LED_TOGGLE
