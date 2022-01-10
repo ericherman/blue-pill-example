@@ -87,7 +87,7 @@ erase:
 .PHONY: ocd
 ocd:
 	$(OPENOCD) \
-		-f $(OPENOCD_SCRIPTS_DIR)/interface/stlink-v2.cfg \
+		-f $(OPENOCD_SCRIPTS_DIR)/interface/stlink.cfg \
 		-f $(OPENOCD_SCRIPTS_DIR)/target/stm32f1x.cfg
 
 .PHONY: gdb
